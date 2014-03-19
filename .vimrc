@@ -93,7 +93,18 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 " Automatic commands
 if has("autocmd")
 	" Enable file type detection
-	filetype on
+	filetype plugin indent on
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
+
+" mappings
+inoremap jj <ESC>
+nnoremap ; :
+nnoremap j gj
+nnoremap k gk
+nnoremap <leader>q :q<cr>
+nnoremap H ^
+nnoremap L g_
+nnoremap - ddp
+nnoremap _ ddkgPk
