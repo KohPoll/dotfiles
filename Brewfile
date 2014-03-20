@@ -35,6 +35,7 @@ install ack
 install pv
 #install exiv2
 install git
+install bash-completion
 install imagemagick --with-webp
 install lynx
 install node
