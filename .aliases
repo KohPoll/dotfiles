@@ -150,4 +150,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias reload="exec $SHELL -l"
 
 # Faster npm from ali npm
-command -v npm > /dev/null && alias npmt="npm --registry http://npm.alibaba-inc.com"
+command -v npm > /dev/null && alias cnpm="npm --registry http://r.cnpmjs.org"
+
+alias hosts="sudo vim /etc/hosts"

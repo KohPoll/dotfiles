@@ -1,4 +1,4 @@
-# Add `~/bin` to the `$PATH`
+# Add `~/bin` to the `$PATH`; `/usr/local/bin` come near(make brew work)
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
@@ -41,4 +41,10 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # make brew's completion work
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	source $(brew --prefix)/etc/bash_completion
+fi
+
+# set virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+	source /usr/local/bin/virtualenvwrapper.sh
 fi
